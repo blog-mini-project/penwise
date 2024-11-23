@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTheme } from '../hooks/useTheme'
-import { Sun, Moon, PenSquare, Home, User } from 'lucide-react'
+import { Sun, Moon, PenSquare, User } from 'lucide-react'
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme()
@@ -17,9 +17,6 @@ const Navbar = () => {
           </Link>
           
           <div className="flex items-center space-x-6">
-            <Link to="/" className="nav-link">
-              <Home className="w-5 h-5" />
-            </Link>
             <Link to="/write" className="flex items-center space-x-2 px-4 py-2 rounded-full bg-purple-600 text-white hover:bg-purple-700 transition-colors">
               <PenSquare className="w-4 h-4" />
               <span>Write</span>
